@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taverna Harakas — authentic Cretan cuisine in Hersonissos. Reserve your table today." />
+  <title>Taverna Harakas — Cretan flavours, mezze, and the warmth of the Aegean.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand">Taverna Harakas</a>
+    <nav class="nav-links">
+      <a href="#about" data-i18n="nav_about">Story</a>
+      <a href="#menu" data-i18n="nav_menu">Menu</a>
+      <a href="#hours" data-i18n="nav_hours">Hours</a>
+      <a href="#location" data-i18n="nav_location">Find us</a>
+      <a href="#contact" data-i18n="nav_contact">Reserve</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-active">EN</span> / <span class="lang-inactive">EL</span>
+    </button>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <section class="hero" id="top" style="background-image: linear-gradient(rgba(20,12,8,0.55), rgba(20,12,8,0.65)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1800&q=80');">
+    <div class="hero-inner">
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Family-run · Hersonissos</p>
+      <h1 class="hero-title">Taverna Harakas</h1>
+      <p class="hero-tagline" data-i18n="hero_tagline">Cretan flavours, mezze, and the warmth of the Aegean.</p>
+      <div class="hero-cta">
+        <a href="tel:302897021815" class="btn btn-primary" data-i18n="cta_reserve">Reserve a table</a>
+        <a href="#menu" class="btn btn-ghost" data-i18n="cta_menu">See the menu</a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <span class="rating-text"><strong>4.9</strong> · <span data-i18n="rating_suffix">1251 Google reviews</span></span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll">↓</a>
+  </section>
+
+  <section class="story" id="about">
+    <div class="container narrow reveal">
+      <p class="section-eyebrow" data-i18n="about_eyebrow">Our story</p>
+      <h2 class="section-title" data-i18n="about_title">A taverna shaped by Crete</h2>
+      <div class="story-text" data-i18n="about_text">
+        <p>At Taverna Harakas, the kitchen is a love letter to Crete — to the herbs that grow wild on the hills, the olive oil pressed from our family's groves, the fish brought in by Hersonissos boats at dawn.</p>
+        <p>What you'll taste isn't a menu — it's a memory. Dishes our grandmothers cooked, served the way they served them, on tables under the bougainvillea, with raki on the house and time stretched out long.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container reveal">
+      <p class="section-eyebrow" data-i18n="menu_eyebrow">Menu</p>
+      <h2 class="section-title" data-i18n="menu_title">A taste of Crete</h2>
+      <p class="section-lead" data-i18n="menu_lead">Made fresh daily from local ingredients. Ask us about today's specials.</p>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="tab active" data-tab="starters" data-i18n="menu_starters">Starters</button>
+        <button class="tab" data-tab="mains" data-i18n="menu_mains">Mains</button>
+        <button class="tab" data-tab="grill" data-i18n="menu_grill">From the grill</button>
+        <button class="tab" data-tab="desserts" data-i18n="menu_desserts">Desserts</button>
+        <button class="tab" data-tab="drinks" data-i18n="menu_drinks">Drinks</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel active" data-panel="starters">
+          <div class="menu-item">
+  <div>
+    <div class="menu-item-name">Dakos</div>
+    <div class="menu-item-desc">Cretan barley rusk, grated tomato, mizithra, oregano, olive oil.</div>
+  </div>
+  <div class="menu-item-price">€7.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Tzatziki</div>
+    <div class="menu-item-desc">Strained yoghurt, cucumber, garlic, dill, our olive oil.</div>
+  </div>
+  <div class="menu-item-price">€5.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Fava Santorini</div>
+    <div class="menu-item-desc">Yellow split pea purée, capers, red onion, lemon.</div>
+  </div>
+  <div class="menu-item-price">€7.00</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Saganaki</div>
+    <div class="menu-item-desc">Fried graviera with thyme honey and sesame.</div>
+  </div>
+  <div class="menu-item-price">€8.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Grilled octopus</div>
+    <div class="menu-item-desc">Charred over olive wood, fava, capers, vinegar.</div>
+  </div>
+  <div class="menu-item-price">€13.50</div>
+</div>
+        </div>
+        <div class="menu-panel" data-panel="mains">
+          <div class="menu-item">
+  <div>
+    <div class="menu-item-name">Lamb yiouvetsi</div>
+    <div class="menu-item-desc">Slow-cooked lamb, kritharaki pasta, tomato, kefalotyri.</div>
+  </div>
+  <div class="menu-item-price">€16.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Moussaka</div>
+    <div class="menu-item-desc">Eggplant, potato, minced beef, béchamel — our grandmother's recipe.</div>
+  </div>
+  <div class="menu-item-price">€14.00</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Stuffed vine leaves</div>
+    <div class="menu-item-desc">Dolmades with rice, herbs, lemon-egg sauce.</div>
+  </div>
+  <div class="menu-item-price">€12.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Catch of the day</div>
+    <div class="menu-item-desc">Whatever the Hersonissos boats bring in. Ask your server.</div>
+  </div>
+  <div class="menu-item-price">€Market</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Apaki</div>
+    <div class="menu-item-desc">Cretan smoked pork, grilled, with sour trahanas.</div>
+  </div>
+  <div class="menu-item-price">€15.00</div>
+</div>
+        </div>
+        <div class="menu-panel" data-panel="grill">
+          <div class="menu-item">
+  <div>
+    <div class="menu-item-name">Mixed grill for two</div>
+    <div class="menu-item-desc">Pork souvlaki, lamb chops, sausage, chicken, pita, fries.</div>
+  </div>
+  <div class="menu-item-price">€32.00</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Lamb chops</div>
+    <div class="menu-item-desc">Char-grilled, oregano, lemon, roasted potatoes.</div>
+  </div>
+  <div class="menu-item-price">€18.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Pork souvlaki</div>
+    <div class="menu-item-desc">Marinated overnight in oregano and citrus.</div>
+  </div>
+  <div class="menu-item-price">€13.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Chicken bouti</div>
+    <div class="menu-item-desc">Free-range thigh, paprika, garlic, fries.</div>
+  </div>
+  <div class="menu-item-price">€12.00</div>
+</div>
+        </div>
+        <div class="menu-panel" data-panel="desserts">
+          <div class="menu-item">
+  <div>
+    <div class="menu-item-name">Loukoumades</div>
+    <div class="menu-item-desc">Honey doughnuts, walnuts, cinnamon.</div>
+  </div>
+  <div class="menu-item-price">€6.00</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Galaktoboureko</div>
+    <div class="menu-item-desc">Custard in phyllo, scented syrup.</div>
+  </div>
+  <div class="menu-item-price">€6.50</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Yoghurt with thyme honey</div>
+    <div class="menu-item-desc">Cretan yoghurt, our honey, walnuts.</div>
+  </div>
+  <div class="menu-item-price">€5.50</div>
+</div>
+        </div>
+        <div class="menu-panel" data-panel="drinks">
+          <div class="menu-item">
+  <div>
+    <div class="menu-item-name">House red / white</div>
+    <div class="menu-item-desc">Local Cretan winery — by the carafe.</div>
+  </div>
+  <div class="menu-item-price">€9.00</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Raki</div>
+    <div class="menu-item-desc">On the house with dessert.</div>
+  </div>
+  <div class="menu-item-price">€—</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Mythos draft</div>
+    <div class="menu-item-desc">500ml.</div>
+  </div>
+  <div class="menu-item-price">€5.00</div>
+</div>
+<div class="menu-item">
+  <div>
+    <div class="menu-item-name">Greek coffee</div>
+    <div class="menu-item-desc">Briki-brewed. Sweet, medium, or sketo.</div>
+  </div>
+  <div class="menu-item-price">€3.00</div>
+</div>
+        </div>
+      </div>
+
+      <p class="menu-foot" data-i18n="menu_foot">Allergens on request. Vegetarian and vegan options available.</p>
+    </div>
+  </section>
+
+  <section class="hours" id="hours">
+    <div class="container narrow reveal">
+      <p class="section-eyebrow" data-i18n="hours_eyebrow">Hours</p>
+      <h2 class="section-title" data-i18n="hours_title">When to find us</h2>
+      <div class="hours-status">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">—</span>
+      </div>
+      <ul class="hours-list">
+        <li><span data-i18n="day_mon">Monday</span><span>12:00 – 23:00</span></li>
+        <li><span data-i18n="day_tue">Tuesday</span><span>12:00 – 23:00</span></li>
+        <li><span data-i18n="day_wed">Wednesday</span><span>12:00 – 23:00</span></li>
+        <li><span data-i18n="day_thu">Thursday</span><span>12:00 – 23:00</span></li>
+        <li><span data-i18n="day_fri">Friday</span><span>12:00 – 23:30</span></li>
+        <li><span data-i18n="day_sat">Saturday</span><span>12:00 – 23:30</span></li>
+        <li><span data-i18n="day_sun">Sunday</span><span>12:00 – 23:00</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container reveal">
+      <p class="section-eyebrow" data-i18n="gallery_eyebrow">Gallery</p>
+      <h2 class="section-title" data-i18n="gallery_title">From our kitchen</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&q=80" alt="" loading="lazy" /></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800&q=80" alt="" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <section class="location" id="location">
+    <div class="container narrow reveal">
+      <p class="section-eyebrow" data-i18n="location_eyebrow">Find us</p>
+      <h2 class="section-title">Other</h2>
+      <p class="section-lead"></p>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.google.com/maps?q=35.3080605,25.3721682&z=16&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map">
+      </iframe>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container narrow reveal">
+      <p class="section-eyebrow" data-i18n="contact_eyebrow">Reserve</p>
+      <h2 class="section-title" data-i18n="contact_title">Book your table</h2>
+      <p class="section-lead" data-i18n="contact_lead">Call us, message on WhatsApp, or drop in. We always have something special on.</p>
+      <div class="contact-grid">
+        <a href="tel:302897021815" class="contact-card">
+          <span class="contact-icon">☎</span>
+          <span class="contact-label" data-i18n="contact_call">Call</span>
+          <span class="contact-value">+30 2897 021815</span>
+        </a>
+        <a href="https://wa.me/302897021815" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">💬</span>
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+30 2897 021815</span>
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=35.3080605,25.3721682" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">📍</span>
+          <span class="contact-label" data-i18n="contact_directions">Directions</span>
+          <span class="contact-value">Other</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <h3>Taverna Harakas</h3>
+          <p>Other<br /></p>
+          <p>+30 2897 021815</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer_follow">Follow</h4>
+          <ul class="socials">
+            <li><span style="opacity:0.4">—</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer_visit">Visit</h4>
+          <p data-i18n="footer_hours_summary">Open daily for lunch and dinner.</p>
+        </div>
+      </div>
+      <p class="footer-fine">© <span id="year"></span> Taverna Harakas. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+<script>window.HOOKEM_HOURS = {"mon": [{"open": "12:00", "close": "23:00"}], "tue": [{"open": "12:00", "close": "23:00"}], "wed": [{"open": "12:00", "close": "23:00"}], "thu": [{"open": "12:00", "close": "23:00"}], "fri": [{"open": "12:00", "close": "23:30"}], "sat": [{"open": "12:00", "close": "23:30"}], "sun": [{"open": "12:00", "close": "23:00"}]};</script>
+</body>
+</html>
